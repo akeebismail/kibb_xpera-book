@@ -39,9 +39,13 @@ public class BookSupplier implements Supplier<Result<List<Book>>> {
         try{
             Response response= client.newCall(request).execute();
             JSONObject jsonObject= new JSONObject(response.body().string());
+            Log.d("JSON",jsonObject.toString());
             JSONArray jsonArray= jsonObject.optJSONArray("books");
+            Log.v("Array", jsonArray.toString());
             Gson gson= new Gson();
+
             List<Book> books= gson.fromJson(jsonArray.toString(), new TypeToken<List<Book>>(){}.getType());
+            Log.d("Books Array", books.toString());
             return books;
         }catch (Exception e){
             Log.v("Log","error in getBooks "+ e.getMessage());

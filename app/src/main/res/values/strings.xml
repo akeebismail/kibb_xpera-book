@@ -7,9 +7,6 @@
     <string name="action_settings">Settings</string>
     <string name="search">Search</string>
     <string name="transition_book_img">transition_book_img</string>
-    <string name="explain_app"> 项目介绍:\n\n
-        使用豆瓣API实现书籍查询功能\n\n
-        使用框架:\n\n
-        Glide,Gson,okhttp,Agera等\n\n
-        欢迎学习交流:-)</string>
+    <string name="explain_app"> Development of a mobile museum info. system:\n\n
+        Yoruba artworks\n\n  Museum art work:\n\n  \n\n Artist, Carvist, Sculpture</string>
 </resources>
